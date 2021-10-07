@@ -1,6 +1,5 @@
 import os
 from zipfile import ZipFile
-
 from celery import shared_task
 from PIL import Image
 from . import models
