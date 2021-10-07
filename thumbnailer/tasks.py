@@ -11,7 +11,6 @@ def make_thumbnails(file_path, thumbnails=[]):
     os.chdir(settings.IMAGES_DIR)
     path, file = os.path.split(file_path)
     file_name, ext = os.path.splitext(file)
-
     zip_file = f"{file_name}.zip"
     results = {'archive_path': f"{settings.MEDIA_URL}images/{zip_file}"}
     try:
