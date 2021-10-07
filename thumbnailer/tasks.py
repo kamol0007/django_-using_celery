@@ -38,5 +38,5 @@ def make_thumbnails(file_path, thumbnails=[]):
 @shared_task
 def create_data(count):
     for i in range(0, count):
-        t = models.Task.objects.create(title='title-'+str(i), title_en='title_en-'+str(i), title_ru='title_ru-'+str(i))
+        t = models.Task.objects.create(title=str(count)+'title-'+str(i), title_en='title_en-'+str(i), title_ru='title_ru-'+str(i))
     return {'id': t.id}
