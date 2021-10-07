@@ -26,7 +26,6 @@ def make_thumbnails(file_path, thumbnails=[]):
             img_copy.save(thumbnail_file)
             zipper.write(thumbnail_file)
             os.remove(thumbnail_file)
-
         img.close()
         zipper.close()
     except IOError as e:
