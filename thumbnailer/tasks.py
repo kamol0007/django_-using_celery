@@ -31,7 +31,6 @@ def make_thumbnails(file_path, thumbnails=[]):
         zipper.close()
     except IOError as e:
         print(e)
-
     return results
 
 
